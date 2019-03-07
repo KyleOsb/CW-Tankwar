@@ -12,7 +12,7 @@ AITank::AITank() // Construtor
 	turret.setOrigin(46,44);
 	turret.setScale(0.2f,0.2f);
 	
-	numberOfShells = 100;
+	numberOfShells = 15;
 }
 
 

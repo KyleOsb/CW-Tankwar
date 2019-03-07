@@ -1,2 +1,22 @@
 ﻿  aitank.cpp
-  tankwar.vcxproj -> H:\Desktop\tankwar-CW Update\Debug\tankwar.exe
+  boundingBox.cpp
+  DumbTank.cpp
+  game.cpp
+h:\desktop\tankwar cw\src\game.cpp(470): warning C4996: 'sf::Text::setColor': was declared deprecated
+  h:\desktop\tankwar cw\sfml-2.4.1\include\sfml\graphics\text.hpp(177): note: see declaration of 'sf::Text::setColor'
+h:\desktop\tankwar cw\src\game.cpp(483): warning C4474: 'sprintf_s' : too many arguments passed for format string
+  h:\desktop\tankwar cw\src\game.cpp(483): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+h:\desktop\tankwar cw\src\game.cpp(490): warning C4474: 'sprintf_s' : too many arguments passed for format string
+  h:\desktop\tankwar cw\src\game.cpp(490): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+h:\desktop\tankwar cw\src\game.cpp(495): warning C4474: 'sprintf_s' : too many arguments passed for format string
+  h:\desktop\tankwar cw\src\game.cpp(495): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+h:\desktop\tankwar cw\src\game.cpp(500): warning C4474: 'sprintf_s' : too many arguments passed for format string
+  h:\desktop\tankwar cw\src\game.cpp(500): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+  main.cpp
+  obstacle.cpp
+  playerTank.cpp
+  shell.cpp
+  tank.cpp
+  Generating Code...
+  LINK : H:\Desktop\Tankwar CW\Debug\tankwar.exe not found or not built by the last incremental link; performing full link
+  tankwar.vcxproj -> H:\Desktop\Tankwar CW\Debug\tankwar.exe
