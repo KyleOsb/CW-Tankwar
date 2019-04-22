@@ -1,22 +1,75 @@
-﻿  aitank.cpp
+﻿  AI.cpp
+  aitank.cpp
   boundingBox.cpp
   DumbTank.cpp
   game.cpp
-h:\desktop\tankwar cw\src\game.cpp(470): warning C4996: 'sf::Text::setColor': was declared deprecated
-  h:\desktop\tankwar cw\sfml-2.4.1\include\sfml\graphics\text.hpp(177): note: see declaration of 'sf::Text::setColor'
-h:\desktop\tankwar cw\src\game.cpp(483): warning C4474: 'sprintf_s' : too many arguments passed for format string
-  h:\desktop\tankwar cw\src\game.cpp(483): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-h:\desktop\tankwar cw\src\game.cpp(490): warning C4474: 'sprintf_s' : too many arguments passed for format string
-  h:\desktop\tankwar cw\src\game.cpp(490): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-h:\desktop\tankwar cw\src\game.cpp(495): warning C4474: 'sprintf_s' : too many arguments passed for format string
-  h:\desktop\tankwar cw\src\game.cpp(495): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
-h:\desktop\tankwar cw\src\game.cpp(500): warning C4474: 'sprintf_s' : too many arguments passed for format string
-  h:\desktop\tankwar cw\src\game.cpp(500): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(47): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(54): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(33): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(35): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(37): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(39): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(41): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(43): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(50): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(52): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(54): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(56): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(63): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(65): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(67): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(69): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(76): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(78): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(80): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(82): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(84): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(86): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(318): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(342): warning C4244: 'argument': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(495): warning C4996: 'sf::Text::setColor': was declared deprecated
+  c:\users\radek zajdel\desktop\uni\ai_cw\sfml-2.4.1\include\sfml\graphics\text.hpp(177): note: see declaration of 'sf::Text::setColor'
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(508): warning C4474: 'sprintf_s' : too many arguments passed for format string
+  c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(508): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(515): warning C4474: 'sprintf_s' : too many arguments passed for format string
+  c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(515): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(520): warning C4474: 'sprintf_s' : too many arguments passed for format string
+  c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(520): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
+c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(525): warning C4474: 'sprintf_s' : too many arguments passed for format string
+  c:\users\radek zajdel\desktop\uni\ai_cw\src\game.cpp(525): note: placeholders and their parameters expect 0 variadic arguments, but 1 were provided
   main.cpp
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(47): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(54): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+  Map.cpp
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(47): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(54): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\map.cpp(105): warning C4305: 'initializing': truncation from 'double' to 'float'
+c:\users\radek zajdel\desktop\uni\ai_cw\src\map.cpp(132): warning C4018: '<': signed/unsigned mismatch
+  Node.cpp
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(47): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(54): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\node.cpp(16): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\node.cpp(17): warning C4244: 'argument': conversion from 'int' to 'float', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\node.cpp(49): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\radek zajdel\desktop\uni\ai_cw\src\node.cpp(54): warning C4553: '==': operator has no effect; did you intend '='?
   obstacle.cpp
   playerTank.cpp
   shell.cpp
   tank.cpp
+  Thomas.cpp
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(47): warning C4244: 'return': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\include\node.h(54): warning C4244: 'initializing': conversion from 'double' to 'float', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(97): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(98): warning C4244: 'initializing': conversion from 'int' to 'float', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(107): warning C4101: 'direction': unreferenced local variable
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(162): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(163): warning C4244: 'initializing': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(195): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(199): warning C4553: '==': operator has no effect; did you intend '='?
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(357): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(365): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(371): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
+c:\users\radek zajdel\desktop\uni\ai_cw\src\thomas.cpp(386): warning C4244: '=': conversion from 'float' to 'int', possible loss of data
   Generating Code...
-  LINK : H:\Desktop\Tankwar CW\Debug\tankwar.exe not found or not built by the last incremental link; performing full link
-  tankwar.vcxproj -> H:\Desktop\Tankwar CW\Debug\tankwar.exe
+  LINK : C:\Users\Radek Zajdel\Desktop\Uni\AI_CW\Debug\tankwar.exe not found or not built by the last incremental link; performing full link
+  tankwar.vcxproj -> C:\Users\Radek Zajdel\Desktop\Uni\AI_CW\Debug\tankwar.exe
