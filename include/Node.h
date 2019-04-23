@@ -3,9 +3,9 @@
 #include <SFML/Graphics.hpp>
 class Node
 {
-private: 
+private:
 	//size and position of the node
-	int xPos; 
+	int xPos;
 	int yPos;
 	int height;
 	int width;
@@ -21,8 +21,8 @@ public:
 	void DrawNode(sf::RenderTarget &target);
 	int getX(); //returns the x position
 	int getY(); //returns the y position 
-	//sets the different colors depending on what the node is
-	void setWall(); 
+				//sets the different colors depending on what the node is
+	void setWall();
 	void setPath();
 	void setGoal();
 	void setStart();
@@ -43,24 +43,31 @@ public:
 		g = parentGScore + 1.0f; // G is parent's G + 1
 		dx = (float)(goalX - currentX);
 		dy = (float)(goalY - currentY);
-		h = sqrt(dx * dx + dy * dy); // 1. H is Euclidean distance to goal
-		return h;
+		//h = sqrt(dx * dx + dy * dy); // 1. H is Euclidean distance to goal
 
-		//D influences the score on 3rd (Manhattan) and 4th (Giagonal) heuristics. Its value is subject to change and gives different results.
 		//h = dx * dx + dy * dy; // 2. Euclidean no sqrt
-		//float D = 1.0;  h = D * (abs(dx) + abs(dy)); //3. Manhattan, D==1 (minimum move cost)
-		//float D = 1.0;  h = D * std::max(abs(dx), abs(dy)); //4. Diagonal, D==1 (minimum move cost)
-		//5. Diagonal Shortcut -> begin
-		float D = sqrt(2) - 1;
-		if (dx <= dy)
-			h = D * dx + dy;
-		else
-			h = dx + D * dy;
-		//5. Diagonal Shortcut -> end
-		//return h;
+		
+		//D influences the score on 3rd (Manhattan) and 4th (Giagonal) heuristics. Its value is subject to change and gives different results.
 
-		//f = g + h; // F is just G + H
-		//return f;
+		//float D = 1.0;  h = D * (abs(dx) + abs(dy)); //3. Manhattan, D==1 (minimum move cost)
+
+		//float D = 1.0;  h = D * std::max(abs(dx), abs(dy)); //4. Diagonal, D==1 (minimum move cost)
+
+		//5. Diagonal Shortcut -> begin
+		float D;
+		D = 1.0*(sqrt(2.0) - 1.0f);
+		if (abs(dx) <= abs(dy))
+			h = D * abs(dx) + abs(dy);
+		else
+			h = abs(dx) + D * abs(dy);
+		//5. Diagonal Shortcut -> end
+
+		//h = 0; //6. Dijkstra's algorithm
+
+		//float D = 1.0;  h = D * (abs(dx) + abs(dy)); //7. A* and Manhattan heuristic for D>>1 e.g. D==10000.0 becomes the BFS algorithm
+		f = g + h; // F is just G + H
+		std::cout << "g=" << g << " h=" << h << " f=" << f << "\n";
+		return f;
 	}
 
 	int row;

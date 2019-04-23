@@ -1,26 +1,26 @@
-#include "Thomas.h"
+#include "Tankmachine.h"
 
 using namespace std;
 
-Thomas::Thomas()
+Tankmachine::Tankmachine()
 {
 	map = new Map(); //Creates a new map object
 	clearMovement();
 }
 
 
-Thomas::~Thomas()
+Tankmachine::~Tankmachine()
 {
 }
 
-void Thomas::reset()
+void Tankmachine::reset()
 {
 	//forwards = true;
 	path.clear(); //clear the old path 
 	flag = false;
 }
 
-void Thomas::move() 
+void Tankmachine::move() 
 {
 	rect.setSize(sf::Vector2f(220, 10));	//fixed rays lenght
 	rect.setPosition(sf::Vector2f(getX(), getY()));
@@ -38,11 +38,11 @@ void Thomas::move()
 
 }
 
-void Thomas::DrawNode(sf::RenderTarget &target) {
+void Tankmachine::DrawNode(sf::RenderTarget &target) {
 
 }
 
-void Thomas::turretMachine() {
+void Tankmachine::turretMachine() {
 	const int IDLE = 0;
 	const int FIRING = 1;
 	int state = IDLE;
@@ -70,7 +70,7 @@ void Thomas::turretMachine() {
 	}
 }
 
-void Thomas::movementMachine() {
+void Tankmachine::movementMachine() {
 	const int IDLE = 0;
 	const int MOVE = 1;
 	const int ROTATE = 2;
@@ -153,7 +153,7 @@ void Thomas::movementMachine() {
 	}
 }
 
-void Thomas::setCurrentNode() {
+void Tankmachine::setCurrentNode() {
 	const int xwidth = 780;
 	const int xheight = 570;
 	float x = getX() - 17.5f;
@@ -174,7 +174,7 @@ void Thomas::setCurrentNode() {
 	//std::cout << "X: " << getX() << " TX: " << targetNode->getX() << " Y: " << getY() << " TY: " << targetNode->getY() << endl;
 }
 
-void Thomas::AimingMachine() { 
+void Tankmachine::AimingMachine() { 
 	const int SCAN = 0;
 	const int AIM = 1;
 	int scanState = SCAN;
@@ -233,7 +233,7 @@ void Thomas::AimingMachine() {
 
 }
 
-void Thomas::navigationMachine() {
+void Tankmachine::navigationMachine() {
 
 	while (!flag) {
 		int randomXLoc = rand() % 13 + 2;
@@ -342,12 +342,12 @@ void Thomas::navigationMachine() {
 	}
 }
 
-void Thomas::collided()
+void Tankmachine::collided()
 {
 	
 }
 
-void Thomas::markTarget(Position p)
+void Tankmachine::markTarget(Position p)
 {
 	baseSpotted = true;
 
@@ -359,7 +359,7 @@ void Thomas::markTarget(Position p)
 	//std::cout << "Target spotted at (" << p.getX() << ", " << p.getY() << ")\n";
 }
 
-void Thomas::markEnemy(Position p)
+void Tankmachine::markEnemy(Position p)
 {
 	enemySpotted = true;
 	xPos = p.getX();
@@ -377,7 +377,7 @@ void Thomas::markEnemy(Position p)
 
 }	
 
-void Thomas::markBase(Position p)
+void Tankmachine::markBase(Position p)
 {
 
 	float deltaX = getX() - p.getX();
@@ -399,18 +399,18 @@ void Thomas::markBase(Position p)
 	//std::cout << "Base spotted at (" << p.getX() << ", " << p.getY() << ")\n";
 }
 
-void Thomas::markShell(Position p)
+void Tankmachine::markShell(Position p)
 {
 	//std::cout << "Shell spotted at (" << p.getX() << ", " << p.getY() << ")\n";
 }
 
-bool Thomas::isFiring()
+bool Tankmachine::isFiring()
 {
 	return firing; // return true if firing 
 	
 }
 
-void Thomas::score(int thisScore, int enemyScore)
+void Tankmachine::score(int thisScore, int enemyScore)
 {
 	std::cout << "MyScore: " << thisScore << "\tEnemy score: " << enemyScore << std::endl;
 }
