@@ -46,7 +46,7 @@ public:
 		//h = sqrt(dx * dx + dy * dy); // 1. H is Euclidean distance to goal
 
 		//h = dx * dx + dy * dy; // 2. Euclidean no sqrt
-
+		
 		//D influences the score on 3rd (Manhattan) and 4th (Giagonal) heuristics. Its value is subject to change and gives different results.
 
 		//float D = 1.0;  h = D * (abs(dx) + abs(dy)); //3. Manhattan, D==1 (minimum move cost)
@@ -56,7 +56,7 @@ public:
 		//5. Diagonal Shortcut -> begin
 		float D;
 		D = 1.0*(sqrt(2.0) - 1.0f);
-		if (dx <= dy)
+		if (abs(dx) <= abs(dy))
 			h = D * abs(dx) + abs(dy);
 		else
 			h = abs(dx) + D * abs(dy);
