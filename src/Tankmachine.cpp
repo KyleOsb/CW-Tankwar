@@ -11,11 +11,11 @@ Tankmachine::Tankmachine()
 
 Tankmachine::~Tankmachine()
 {
+
 }
 
 void Tankmachine::reset()
 {
-	//forwards = true;
 	path.clear(); //clear the old path 
 	flag = false;
 }
@@ -35,10 +35,10 @@ void Tankmachine::move()
 	AimingMachine();
 	navigationMachine();
 	movementMachine();
-
 }
 
-void Tankmachine::DrawNode(sf::RenderTarget &target) {
+void Tankmachine::DrawNode(sf::RenderTarget &target)
+{
 
 }
 
@@ -179,8 +179,6 @@ void Tankmachine::AimingMachine() {
 	const int AIM = 1;
 	int scanState = SCAN;
 
-	//int ammoReserved = getEnemyBases(); // Value to return minimum require ammo to win game.
-
 	//Transition Variables
 	if (scanState == SCAN && friendlyBaseSpotted == false) {
 		if (enemySpotted == true) {
@@ -253,7 +251,7 @@ void Tankmachine::navigationMachine() {
 
 	int enemyDistanceThreshold = 100;
 	int wallDistanceThreshold = 5;
-//	
+
 	//Transition Conditionals
 	if (state == IDLE) {
 		if (getEnemyDistance < enemyDistanceThreshold || (enemySpotted == true && numberOfShells > buildingsRemain)) {

@@ -53,4 +53,3 @@ public:
 	Node* node;
 	Map* map;
 };
-
